@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=2t7G2mtijs6qiQxyRx0USSAzzbocwuzv&location=India
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 Apr 2024 16:38:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '776'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - c803edc0-00c6-11ef-9ec4-f78d917d57da
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"308-KjaJuIigRoCDZV5p4wIVt2vOT9Y"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJJbmRpYSJ9LCJsb2NhdGlvbnMiOlt7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiIiLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJJTiIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBMVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ09VTlRSWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjoyOC42MzA5NywibG5nIjo3Ny4yMTcyfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjI4LjYzMDk3LCJsbmciOjc3LjIxNzJ9LCJtYXBVcmwiOiIifV19XX0=
+  recorded_at: Mon, 22 Apr 2024 16:38:43 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/air_pollution?appid=bcbbe8d923aaac456f4700f893cca0f8&lat=28.63097&lon=77.2172
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 22 Apr 2024 16:38:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '192'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/air_pollution?lat=28.63&lon=77.22"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":77.2172,"lat":28.631},"list":[{"main":{"aqi":4},"components":{"co":1415.25,"no":0,"no2":44.55,"o3":29.33,"so2":30.28,"pm2_5":64.08,"pm10":144.24,"nh3":31.92},"dt":1713803923}]}'
+  recorded_at: Mon, 22 Apr 2024 16:38:43 GMT
+recorded_with: VCR 6.2.0
