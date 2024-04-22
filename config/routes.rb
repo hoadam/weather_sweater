@@ -13,5 +13,9 @@ Rails.application.routes.draw do
       resources :sessions, only: [:create]
       resources :users, only: [:create]
     end
+
+    namespace :v1 do
+      resources :air_quality, only: [:index]
+    end
   end
 end
