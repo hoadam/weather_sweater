@@ -1,5 +1,4 @@
 class Api::V0::ForecastController < ApplicationController
-
   def index
     location = MapQuestService.get_latlng(params[:location])
     lat = location.lat
