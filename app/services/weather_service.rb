@@ -12,4 +12,9 @@ class WeatherService
     response = get_url("forecast.json", q: "#{lat},#{lng}", days: 5)
       Weather.from_json(response)
   end
+
+  def self.get_end_point_weather(location, datetime)
+    response = get_url("future.json", q: "#{location}", dt: "#{datetime}")
+      Weather::Forecast.from_json(response)
+  end
 end
